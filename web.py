@@ -5,9 +5,9 @@ todos = functions.get_todos()
 
 
 def add_todo():
-    todo = st.session_state["new_todo"] + "\n"
+    to_do = st.session_state["new_todo"] + "\n"
     # session_state is a type of dict containing new todo value
-    todos.append(todo)
+    todos.append(to_do)
     functions.write_todos(todos)
 
 
